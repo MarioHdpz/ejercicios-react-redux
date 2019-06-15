@@ -1,18 +1,10 @@
 # Ejercicios React Redux
 ___
 
-### ¿Cómo usar?
+### Ejercicio 1: Hola mundo con Redux
 
-Para cambiar entre ejercicios sólamente cambiate de rama de git, los ejercicios se encuentran en las ramas llamadas
-**exercise-<# de ejercicio>**:
+Tienes una aplicación con un componente de React que muestra "Hello world".
 
-`git checkout exercise-1`
+Tu tarea es implementar el React Redux para que el mensaje "Hello world!" sea obtenido desde un reducer en nuestro store.
 
-Las instrucciones de cada ejercicio se muestran en esta mismo archivo README.md
-__
-
-Para ver la solución puedes cambiarte a la ramas correspondientes llamadas **solution-<# de ejercicio>**
-
-`git checkout solution-1`
-
-¡Éxito!
+**Bonus**
