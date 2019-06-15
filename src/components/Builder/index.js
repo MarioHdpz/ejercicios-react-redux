@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 // Actions
 const confirmBurger = total => ({
   type: 'addBurger',
-  total: total,
+  /** Se debe mandar información junto con la acción */
 })
 
 /**
@@ -50,7 +50,7 @@ class Builder extends Component {
   };
 
   handleConfirm = () => {
-    this.props.confirmBurger(this.getPrice())
+    this.props.confirmBurger(/** Parámetro faltante */)
     this.setState({ ingredients: [] });
   }
 

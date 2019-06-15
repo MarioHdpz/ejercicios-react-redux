@@ -6,11 +6,17 @@ import { createStore } from  'redux';
 import { Provider } from 'react-redux';
 import Receipt from './components/Receipt';
 
-const initialState = []
+
+/* Arreglo de precios finales de cada hamburguesa */
+const initialState = [15, 25]
 
 const reducer = (state=initialState, action) => {
   switch (action.type) {
     case 'addBurger':
+      /** Se agregan nuevos elementos al arreglo
+       * OJO: la acción debe contener una propiedad 'total'
+       * que contiene información
+       */
       const newState = state.concat([action.total])
       return newState;
     default:

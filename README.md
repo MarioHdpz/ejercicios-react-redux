@@ -1,11 +1,23 @@
 # Ejercicios React Redux
 ___
 
-### Ejercicio 2: Contador con Redux
+### Ejercicio 3: Burger builder con recibo
 
-Tienes un contador cuyo número es mostrado desde el store de Redux.
+Se te ha entregado una aplicación para crear hamburguesas, pero
+no está funcionando correctamente.
 
-Debes hacer "dispatch" de acciones al dar click a los botones y manejar
-esas acciones en el reducer para cambiar el estado del store.
+Hay dos componentes que están conectados por medio de Redux: Builder y Receipt.
+
+Ambos se conectan a un reducer que contiene un arreglo de subtotales de cada
+hamburguesa que se ha agregado, pero la acción addBurger no se está disparando
+correctamente.
+
+Tu tarea es reparar el "dispatch" de la acción para que los precios de las
+hamburguesas agregadas se puedan ver en el recibo.
+
+TIP: La acción debe de contener ademas del "type" información relevante
+para el recibo.
 
 **Bonus**
+
+Agregar un botón para resetear el recibo completo.
