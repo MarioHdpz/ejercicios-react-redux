@@ -1,3 +1,33 @@
-.main {
-  text-align: center;
+
+
+.counter {
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counter > div {
+  height: 1em;
+  color: #494949 !important;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.counter > div:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 6em;
+  display: inline-block;
 }

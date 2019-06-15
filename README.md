@@ -1,10 +1,11 @@
 # Ejercicios React Redux
 ___
 
-### Ejercicio 1: Hola mundo con Redux
+### Ejercicio 2: Contador con Redux
 
-Tienes una aplicación con un componente de React que muestra "Hello world".
+Tienes un contador cuyo número es mostrado desde el store de Redux.
 
-Tu tarea es implementar el React Redux para que el mensaje "Hello world!" sea obtenido desde un reducer en nuestro store.
+Debes hacer "dispatch" de acciones al dar click a los botones y manejar
+esas acciones en el reducer para cambiar el estado del store.
 
 **Bonus**

@@ -1,14 +1,24 @@
 import React from 'react';
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import Counter from './components/Counter';
 import { createStore } from  'redux';
 import { Provider } from 'react-redux';
 
-const initialState = "Hola mundo!"
+const initialState = 0
 
 const reducer = (state=initialState, action) => {
-  /** Aquí podriamos hacer algo dependiendo de la acción */
-  return state
+  switch (action.type) {
+    case 'add':
+      return state + 1;
+    case 'substract':
+      if(state > 0) {
+          return state - 1 ;
+      } else {
+        return state;
+      }
+    default:
+      return state;
+  }
 }
 
 const store = createStore(reducer);
@@ -16,9 +26,9 @@ const store = createStore(reducer);
 function App() {
   return (
     <Provider store={store}>
-      <HelloWorld />
+      <Counter />
     </Provider>
-  );
+  )
 }
 
 export default App;
