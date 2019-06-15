@@ -9,13 +9,11 @@ const initialState = 0
 const reducer = (state=initialState, action) => {
   switch (action.type) {
     case 'add':
-      return state + 1;
+      // Aquí puedes modificar el estado antes de regresarlo
+      return state;
     case 'substract':
-      if(state > 0) {
-          return state - 1 ;
-      } else {
-        return state;
-      }
+      // Aquí puedes modificar el estado antes de regresarlo
+      return state;
     default:
       return state;
   }
