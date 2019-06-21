@@ -6,7 +6,7 @@ import Form from './components/Form';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import { whiteList } from './store/reducers';
+import { whiteList, blackList } from './store/reducers';
 
 const store = createStore(whiteList)
 

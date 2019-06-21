@@ -9,10 +9,10 @@ botón que se apriete en el formulario.
 El formulario (Form) y las Listas (WhiteList y BlackList) están conectados
 por medio de Redux.
 
-Sin embargo, ambos botones agregan a la misma lista, al parecer sólo hay un reducer
-y ambos botones están conectados al mismo.
+Sin embargo, ambos botones agregan a la misma lista, al parecer Redux sólo está
+configurado con un reducer
 
-Tu tarea es crear otro reducer, combinarlos con el actual en el store y conectar
+Tu tarea es combinar los dos reducers proporcionados y conectar
 cada lista con su respectivo componente.
 
 **Bonus**
