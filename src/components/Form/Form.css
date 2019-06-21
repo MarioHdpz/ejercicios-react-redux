@@ -1,0 +1,18 @@
+.input {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.button {
+  color: white;
+  background-color: blue;
+  border-color: blue;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.form-container {
+    text-align: center;
+    margin: 1em;
+}

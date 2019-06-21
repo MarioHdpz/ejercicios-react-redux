@@ -1,10 +1,20 @@
 # Ejercicios React Redux
 ___
 
-### Ejercicio 1: Hola mundo con Redux
+### Ejercicio 4: Black list white list
 
-Tienes una aplicación con un componente de React que muestra "Hello world".
+Tienes una aplicación que permite agregar tareas a dos listas dependiendo del 
+botón que se apriete en el formulario.
 
-Tu tarea es implementar el React Redux para que el mensaje "Hello world!" sea obtenido desde un reducer en nuestro store.
+El formulario (Form) y las Listas (WhiteList y BlackList) están conectados
+por medio de Redux.
+
+Sin embargo, ambos botones agregan a la misma lista, al parecer sólo hay un reducer
+y ambos botones están conectados al mismo.
+
+Tu tarea es crear otro reducer, combinarlos con el actual en el store y conectar
+cada lista con su respectivo componente.
 
 **Bonus**
+
+1. Al dar click en una tarjeta la tarea debe pasar de una lista a otra.

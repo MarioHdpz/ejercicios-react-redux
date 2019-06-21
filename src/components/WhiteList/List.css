@@ -1,0 +1,11 @@
+.list {
+    width: 49.9%;
+    display: inline-block;
+    text-align: center
+}
+
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
