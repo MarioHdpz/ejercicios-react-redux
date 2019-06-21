@@ -20,5 +20,4 @@ para el recibo.
 
 **Bonus**
 
-1. Mostrar en el Builder el total que se lleva en la cuenta.
-2. Agregar un botón para resetear el recibo completo.
+1. Agregar un botón para resetear el recibo completo.
