@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+// Actions
+const reset = () => ({
+    type: 'reset',
+})
+
 const Receipt = props => {
     const total = props.burgersArray.reduce(
         (sum, price) => price + sum
@@ -16,6 +21,7 @@ const Receipt = props => {
         <Link to="/">
           <div className="button">Return to builder</div>
         </Link>
+        <div className="button" onClick={props.reset}>Reset</div>
         </div>
     )
 }
@@ -24,4 +30,4 @@ const mapStateToProps = state => ({
     burgersArray: state,
 });
 
-export default connect(mapStateToProps)(Receipt);
+export default connect(mapStateToProps, {reset})(Receipt);

@@ -19,6 +19,8 @@ const reducer = (state=initialState, action) => {
        */
       const newState = state.concat([action.price])
       return newState;
+    case 'reset':
+        return initialState;
     default:
       return state;
   }
