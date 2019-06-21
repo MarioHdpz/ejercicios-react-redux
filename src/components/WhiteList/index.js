@@ -10,7 +10,7 @@ const WhiteList = props => {
       <h2>White List</h2>
       <div className="tasks">
         {props.tasks.map((task, index) =>
-          <Task key={task.id} name={`Task ${index + 1}`} content={task.content} color="white" />
+          <Task key={task.id} name={`Task ${index + 1}`} task={task} color="white" />
         )}
       </div>
     </div>

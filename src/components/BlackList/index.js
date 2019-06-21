@@ -10,7 +10,7 @@ const BlackList = props => {
       <h2>Black List</h2>
       <div className="tasks">
         {props.tasks.map((task, index) =>
-          <Task key={task.id} name={`Task ${index + 1}`} content={task.content} color="black" />
+          <Task key={task.id} name={`Task ${index + 1}`} task={task} color="black" />
         )}
       </div>
     </div>
