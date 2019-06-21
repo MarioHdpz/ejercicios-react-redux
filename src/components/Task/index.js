@@ -16,7 +16,7 @@ function Task(props) {
     return (
         <div className={classes}>
             <h3>{props.name}</h3>
-            <p>{props.description}</p>
+            <p>{props.content}</p>
         </div>
     );
 }

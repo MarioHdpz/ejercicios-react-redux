@@ -28,14 +28,14 @@ class Form extends Component {
             onClick={() => 
               this.props.dispatch(addToWhiteList(this.state.input))
             }
-            class="button">
+            className="button">
               To white list
           </button>
           <button 
             onClick={() => 
               this.props.dispatch(addToWhiteList(this.state.input))
             }
-            class="button">
+            className="button">
               To black list
           </button>
         </div>
