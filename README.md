@@ -8,7 +8,7 @@ no está funcionando correctamente.
 
 Hay dos componentes que están conectados por medio de Redux: Builder y Receipt.
 
-Ambos se conectan a un reducer que contiene un arreglo de subtotales de cada
+Ambos se conectan a un reducer que contiene un arreglo con el precio de cada
 hamburguesa que se ha agregado, pero la acción addBurger no se está disparando
 correctamente.
 
@@ -20,4 +20,5 @@ para el recibo.
 
 **Bonus**
 
-Agregar un botón para resetear el recibo completo.
+1. Mostrar en el Builder el total que se lleva en la cuenta.
+2. Agregar un botón para resetear el recibo completo.

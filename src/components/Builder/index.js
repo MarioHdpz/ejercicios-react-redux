@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 
 // Actions
-const confirmBurger = total => ({
+const confirmBurger = price => ({
   type: 'addBurger',
   /** Se debe mandar información junto con la acción */
 })
@@ -62,11 +62,8 @@ class Builder extends Component {
             this.addIngredient(x);
           }}
         />
-        <Burger
-          ingredients={this.state.ingredients}
-          onIngredientClick={index => this.removeIngredient(index)}
-        />
-        <h1>$ {this.getPrice()}</h1>
+        <h3># Burgers added: {this.props.burgersArray.length}</h3>
+        <h2>Burger {this.props.burgersArray.length + 1} : $ {this.getPrice()}</h2>
         <div 
           className="button"
           onClick={() => this.handleConfirm()}>
@@ -75,7 +72,12 @@ class Builder extends Component {
         <Link to="/receipt">
           <div className="button">See receipt</div>
         </Link>
-        <h3># Burgers: {this.props.burgersArray.length}</h3>
+        <div className="builder">
+          <Burger
+            ingredients={this.state.ingredients}
+            onIngredientClick={index => this.removeIngredient(index)}
+          />
+        </div>
       </div>
     );
   }

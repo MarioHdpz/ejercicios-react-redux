@@ -9,8 +9,7 @@
 
 .burger {
   width: 40%;
-  height: 300px;
-  overflow: hidden;
+  height: 400px;
   margin: auto;
 }
 
@@ -129,10 +128,15 @@
 }
 
 .control-panel {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.builder {
+  margin-top: 20px;
 }
 
 .button {

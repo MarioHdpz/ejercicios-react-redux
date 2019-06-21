@@ -8,16 +8,16 @@ import Receipt from './components/Receipt';
 
 
 /* Arreglo de precios finales de cada hamburguesa */
-const initialState = [15, 25]
+const initialState = []
 
 const reducer = (state=initialState, action) => {
   switch (action.type) {
     case 'addBurger':
       /** Se agregan nuevos elementos al arreglo
-       * OJO: la acción debe contener una propiedad 'total'
+       * OJO: la acción debe contener una propiedad 'price'
        * que contiene información
        */
-      const newState = state.concat([action.total])
+      const newState = state.concat([action.price])
       return newState;
     default:
       return state;

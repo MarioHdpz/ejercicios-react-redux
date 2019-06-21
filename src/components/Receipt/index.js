@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const Receipt = props => {
@@ -8,10 +9,13 @@ const Receipt = props => {
 
     return (
         <div className="container receipt">
-            {props.burgersArray.map( price =>
-                <h2 className="receipt-row">{`1 x $ ${price}`}</h2>
+            {props.burgersArray.map( (price, key) =>
+                <h2 className="receipt-row" key={key}>{`Burger ${key + 1} x $ ${price}`}</h2>
             )}
         <h1>{`Total: $${total}`}</h1>
+        <Link to="/">
+          <div className="button">Return to builder</div>
+        </Link>
         </div>
     )
 }
